@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Header with Hover Menu</title>
+    <style>
+    /* Reset some default styles */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header and navigation menu */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* Style the sub-menu */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+}
+
+.sub-menu li {
+    margin: 5px 0;
+}
+
+/* Style the links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        
+            <ul>
+                <li class="menu-item"><a href="#">dropdown</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Services</a></li>
+                <li class="menu-item"><a href="#">Contact</a></li>
+            </ul>
+        
+    </header>
+</body>
+</html>
